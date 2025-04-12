@@ -1,56 +1,53 @@
 
 body {
     margin: 0;
-    font-family: 'Arial Black', sans-serif;
-    background-color: #000;
-    color: #fff;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    background-color: #000000;
+    color: white;
     scroll-behavior: smooth;
 }
 
-header {
-    text-align: center;
-    padding: 50px 20px;
+.header {
+    background: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
     font-size: 3em;
+    color: #ffffff;
+}
+
+.nav a {
     color: #0ff;
-}
-
-.tagline {
-    font-size: 1.2em;
-    color: #ccc;
-    margin-top: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-nav a {
-    color: #fff;
+    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #0ff;
+.nav a:hover {
+    color: #fff;
 }
 
-section {
-    padding: 80px 20px;
+.hero {
     text-align: center;
+    padding: 100px 20px;
+    background: #222;
 }
 
-footer {
+.section {
+    padding: 60px 20px;
+    border-bottom: 1px solid #333;
+}
+
+.footer {
     text-align: center;
-    padding: 30px 20px;
-    background-color: #111;
-    color: #666;
+    padding: 30px;
+    background: #111;
 }

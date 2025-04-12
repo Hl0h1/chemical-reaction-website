@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chemical Reaction</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1 class="logo">Chemical Reaction</h1>
+        <p class="tagline">You're now locked in the Lab</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>This is where your musical journey story will go.</p>
+        </section>
+        <section id="music">
+            <h2>Music</h2>
+            <p>Embed your music here (SoundCloud, Spotify, etc.).</p>
+        </section>
+        <section id="store">
+            <h2>Store</h2>
+            <p>Soon you can sell digital downloads here.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Social links and contact info will go here.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Chemical Reaction. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
